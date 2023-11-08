@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>wassup chat app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
     <link rel="stylesheet" href="css/style.css"/>
     
   </head>
   <body>
     <section class="chat__section">
       <div class="brand">
-       <!-- <img height="40" src="/public/wassup.png" alt="" />  --> 
         <h1>wassup</h1>
       </div>
       <div class="message__area">
@@ -24,14 +24,20 @@
         ></textarea>
       </div>
     </section>
-    <scrip src="/client.js"></script>
-  </body>
-</html>
+    <script src="js/client.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+
+    <script>
+       $('#textarea').emojioneArea({
+        pickerPosition:'top'
+       });
+    </script>
+
 <script src="/socket.io/socket.io.js"></script>
 <script>
   const socket = io();
 </script>
-</body>
+  </body>
 </html>
-
 
