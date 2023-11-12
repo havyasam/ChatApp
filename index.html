@@ -11,19 +11,30 @@
   <body>
     <section class="chat__section">
       <div class="brand">
+        <img src="./approved-chat-app-icon-vector-28873697.jpg" alt="Chat Logo">
         <h1>wassup</h1>
       </div>
       <div class="message__area">
+        
       </div>
-      <div>
+
+      <div class="message__input">
         <textarea
           id="textarea"
           cols="90"
           rows="2"
           placeholder="write a message"
         ></textarea>
+        <button class="send__button">Send</button>
       </div>
+
+
+
     </section>
+
+
+
+
     <script src="js/client.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
@@ -38,6 +49,5 @@
 <script>
   const socket = io();
 </script>
-  </body>
+</body>
 </html>
-
